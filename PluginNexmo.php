@@ -18,29 +18,29 @@ class PluginNexmo extends NE_Plugin
             ),
             'Description' => array (
                 "type"=>"hidden",
-                "description"=>/*T*/"Description viewable by admin in server settings"/*/T*/,
-                "value"=>/*T*/"Allow SMS messages via Nexmo. All requests require your API credentials, you will find them in API Settings in Nexmo Dashboard."/*/T*/
+                "description"=>lang("Description viewable by admin in server settings"),
+                "value"=>lang("Allow SMS messages via Nexmo. All requests require your API credentials, you will find them in API Settings in Nexmo Dashboard.")
              ),
-            /*T*/'Enabled'/*/T*/       => array(
+            lang('Enabled')       => array(
                 'type'          => 'yesno',
-                'description'   => /*T*/'When enabled sms messages will use this plugin.'/*/T*/,
+                'description'   => lang('When enabled sms messages will use this plugin.'),
                 'value'         => '0',
             ),
-            /*T*/'API Key'/*/T*/       => array(
+            lang('API Key')       => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Your API Key.<br/><i>Ex: api_key=n3xm0rock</i>'/*/T*/,
+                'description'   => lang('Your API Key.<br/><i>Ex: api_key=n3xm0rock</i>'),
                 'value'         => '',
                 'required'      => true
             ),
-            /*T*/'API Secret'/*/T*/       => array(
+            lang('API Secret')       => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Your API Secret.<br/><i>Ex: api_secret=12ab34cd</i>'/*/T*/,
+                'description'   => lang('Your API Secret.<br/><i>Ex: api_secret=12ab34cd</i>'),
                 'value'         => '',
                 'required'      => true
             ),
-            /*T*/'Nexmo Number'/*/T*/       => array(
+            lang('Nexmo Number')       => array(
                 'type'          => 'text',
-                'description'   => /*T*/'The number used as from message.  Obtained in dashboard.'/*/T*/,
+                'description'   => lang('The number used as from message.  Obtained in dashboard.'),
                 'value'         => '',
                 'required'      => true
             )
